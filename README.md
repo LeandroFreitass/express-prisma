@@ -14,7 +14,7 @@ Esta é uma API construída com Express, Prisma e JWT para autenticação de usu
 4. Inicie o servidor com `npm start`.
 
 ### Exemplos de Solicitações
-#### Registro de Usuário
+#### Registro de Usuário, Login e logout 
 ```http
 POST /auth/register
 Content-Type: application/json
@@ -32,3 +32,8 @@ Content-Type: application/json
   "email": "johndoe@example.com",
   "password": "mypassword"
 }
+
+POST /auth/logout
+Content-Type: application/json
+
+
