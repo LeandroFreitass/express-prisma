@@ -17,7 +17,7 @@ This is an API built using Express, Prisma, and JWT for user authentication and 
 #### User Registration, Login, and Logout
 ```http
 
- Register a User
+Register a User
 
 POST /auth/register
 
@@ -28,7 +28,7 @@ POST /auth/register
   "address": "John 131"
 }
 
-Test User Login
+User Login
 POST /auth/login
 
 {
