@@ -38,6 +38,5 @@ POST /auth/login
 
 User Logout
 POST /auth/logout
-Content-Type: application/json
 
 
