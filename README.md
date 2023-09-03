@@ -1,38 +1,42 @@
-## Minha API de Autenticação e Gerenciamento de Usuários
+## My Authentication and User Management API
 
-Esta é uma API construída com Express, Prisma e JWT para autenticação de usuários e gerenciamento de contas.
+This is an API built using Express, Prisma, and JWT for user authentication and account management.
 
-### Tecnologias Utilizadas
+### Technologies Used
 - Express.js
 - Prisma
 - JSON Web Tokens (JWT)
 
-### Instruções de Uso
-1. Clone este repositório.
-2. Configure as variáveis de ambiente.
-3. Instale as dependências com `npm install`.
-4. Inicie o servidor com `npm start`.
+### Usage Instructions
+1. Clone this repository.
+2. Configure the environment variables.
+3. Install the dependencies using npm install.
+4. Start the server with npm start.
 
-### Exemplos de Solicitações
-#### Registro de Usuário, Login e logout 
+### Request Examples
+#### User Registration, Login, and Logout
 ```http
+
+ Register a User
+
 POST /auth/register
-Content-Type: application/json
 
 {
   "name": "John Doe",
   "email": "johndoe@example.com",
   "password": "mypassword"
+  "address": "John 131"
 }
 
+Test User Login
 POST /auth/login
-Content-Type: application/json
 
 {
   "email": "johndoe@example.com",
   "password": "mypassword"
 }
 
+User Logout
 POST /auth/logout
 Content-Type: application/json
 
